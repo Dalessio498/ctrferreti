@@ -28,10 +28,12 @@ body {
 }
 
 .sidebar{
-    height: 635px;
+    height: 100%;
     width: 250px;
     position: fixed;
-    background-image: linear-gradient(to top, #ff0000,#000000 );
+    /* background-image: linear-gradient(to top, #ff0000,#000000 ); */
+    background-image: url(images/BGsideBar1.png);
+    background-size: cover;
 }
 
 .logo {
@@ -180,10 +182,12 @@ body {
     align-items: center;
     column-gap: 40px;
     margin: 15px;
-     row-gap: 20px;
+    row-gap: 20px;
 }
 
 .filhoMaquinas {
+
+
     width: 250px;
     height: 350px;
     background-image: linear-gradient(to top, #8d0000,#000000 );
