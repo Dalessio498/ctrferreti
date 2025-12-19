@@ -17,8 +17,18 @@
 
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
     display: flex;
+    background-color: #f4f4f4;
+}
+
+::selection{
+    background-color: #ff0000d3;
+    color: white;
 }
 
 * {
@@ -27,12 +37,25 @@ body {
     padding: 0;
 }
 
+.caixaHr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+hr {
+
+  width: 80%;
+  margin: 10px;
+}
+
 .sidebar{
     height: 100%;
     width: 250px;
     position: fixed;
     /* background-image: linear-gradient(to top, #ff0000,#000000 ); */
-    background-image: url(images/BGsideBar1.png);
+    background-image: url(images/BGsideBar1.0.png);
     background-size: cover;
 }
 
@@ -41,6 +64,15 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.aLogo{
+  transition: 0.6s ease;
+}
+
+.aLogo:hover{
+  scale: 1.02;
+}
+
 .logoInt{
      width: 220px;
     display: flex;
@@ -133,13 +165,26 @@ body {
 .textTop {
   font-family: var(--Font_Family_Side);
   font-size: 50px;
-  color: #000000;
+  color: #610202;
+  transition: 0.6s ease;
+  display: inline-block;
 }
+
+.textTop:hover{
+  scale: 1.03;
+}
+
+.textoTerc {
+  color: #ffffff;
+  margin-top: 7px;
+  font-size: 16px;
+}
+
 .textSmall {
     text-align: center;
     width: 100%;
-    font-size: 26px;
-    color: #ff0000;
+    font-size: 20px;
+    color: #333333;
     margin-top: 15px;
 }
 
@@ -147,6 +192,7 @@ body {
     border-radius: 20px;
     scale: 1.2;
     margin: 45px;
+    box-shadow: 0px 2px 4px gray;
 }
 
 .caixaMapa{
@@ -155,10 +201,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(90deg, #ff0000,#000000 );
+     background-image: linear-gradient(to top, rgb(80, 0, 0), rgb(0, 0, 0));
     border-radius: 20px;
     scale: 1.1;
     margin: 45px;
+    box-shadow: 0px 2px 4px gray;
 }
 .mapaCT {
     border-radius: 16px;
@@ -173,11 +220,17 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 100px;
 }
 
+.pg2,.pg3,.pg4,.pg5{
+   margin-top: 30px;
+}
 .paiMaquinas {
-    display: grid;
-    grid-template-columns: AUTO AUTO AUTO;
+    /* display: grid;
+    grid-template-columns: AUTO AUTO AUTO; */
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     column-gap: 40px;
@@ -186,11 +239,9 @@ body {
 }
 
 .filhoMaquinas {
-
-
     width: 250px;
     height: 350px;
-    background-image: linear-gradient(to top, #8d0000,#000000 );
+     background-image: linear-gradient(to top, rgb(80, 0, 0), rgb(0, 0, 0));
     border-radius: 16px;
     display: flex;
     justify-content: center;
@@ -200,10 +251,13 @@ body {
     font-weight: 600;
     color: white;
     transition: 0.6s ease;
+    box-shadow: 0px 2px 4px gray;
 }
 
 .filhoMaquinas:hover{
-    scale: 1.03;
+    transform: translateY(-5px);
+   box-shadow: 0px 4px 8px rgb(78, 0, 0);
+   scale: 1.03;
 }
 
 .filhoMaquinas img {
@@ -214,7 +268,7 @@ body {
 
 .profPai{
      display: grid;
-    grid-template-columns: AUTO AUTO;
+    grid-template-columns: AUTO AUTO AUTO;
     justify-content: center;
     align-items: center;
     column-gap: 40px;
@@ -225,7 +279,7 @@ body {
 .profFilho {
      width: 250px;
     height: 350px;
-    background-image: linear-gradient(to top, #8d0000,#000000 );
+     background-image: linear-gradient(to top, rgb(80, 0, 0), rgb(0, 0, 0));
     border-radius: 16px;
     display: flex;
     justify-content: center;
@@ -235,15 +289,23 @@ body {
     font-weight: 600;
     color: white;
     transition: 0.6s ease;
+    box-shadow: 0px 2px 4px gray;
 }
 .profFilho:hover{
-    scale: 1.03;
+    transform: translateY(-5px);
+   box-shadow: 0px 4px 8px rgb(78, 0, 0);
+   scale: 1.03;
 }
 
 .profFilho img {
     width: 200px;
     margin-bottom: 25px;
     border-radius: 12px;
+}
+
+.profFilho a {
+  text-decoration: none;
+  color: white;
 }
 
 .servPai{
@@ -259,7 +321,7 @@ body {
 .servFilho {
      width: 250px;
     height: 150px;
-    background-image: linear-gradient(to top, #8d0000,#000000 );
+   background-image: linear-gradient(to top, rgb(80, 0, 0), rgb(0, 0, 0));
     border-radius: 16px;
     display: flex;
     justify-content: center;
@@ -269,10 +331,13 @@ body {
     font-weight: 600;
     color: white;
     transition: 0.6s ease;
+    box-shadow: 0px 2px 4px gray;
 }
 
 .servFilho:hover{
-    scale: 1.03;
+    transform: translateY(-5px);
+   box-shadow: 0px 4px 8px rgb(78, 0, 0);
+   scale: 1.03;
 }
 
 .more{
@@ -291,7 +356,7 @@ footer{
 
 footer a{
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.37);
 }
 
 .opcFoot{
@@ -301,6 +366,28 @@ footer a{
 
 .listFoot {
     margin: 5px;
+}
+
+.patrocinadores{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.patroFilha{
+  list-style: none;
+  margin: 20px;
+  margin-top: 0;
+  transition: 0.6s ease;
+}
+
+.patroFilha:hover{
+  scale: 1.05;
+}
+
+.patroFilha img {
+  width: 70px;
 }
 
 @media (max-width: 1024px) {
